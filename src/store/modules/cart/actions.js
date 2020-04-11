@@ -1,6 +1,6 @@
 export function addToCartRequest(id) {
   return {
-    type: '@cart/REQUEST',
+    type: '@cart/ADD_REQUEST',
     id,
   };
 }
@@ -19,9 +19,16 @@ export function removeFromCart(id) {
   };
 }
 
-export function updateAmount(id, amount) {
+export function updateAmountRequest(id, amount) {
   return {
-    type: '@cart/UPDATE',
+    type: '@cart/UPDATE_AMOUNT_REQUEST',
+    id,
+    amount,
+  };
+}
+export function updateAmountSucces(id, amount) {
+  return {
+    type: '@cart/UPDATE_AMOUNT_SUCCESS',
     id,
     amount,
   };
