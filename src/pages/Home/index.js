@@ -32,23 +32,20 @@ class Home extends Component {
     const { amount } = this.props;
     return (
       <ProductList>
-        {products.map((product) => (
-          <li key={product.id}>
-            <img src={product.image} alt={product.title} />
-            <strong>{product.title}</strong>
-            <span>{product.priceFormatted}</span>
+           <img src="https://static.netshoes.com.br/produtos/tenis-nike-revolution-5-masculino/26/HZM-1731-026/HZM-1731-026_zoom1.jpg?ts=1571078789&" alt="tenis" />
+            <strong>Tênis Nike Revolution 5</strong>
+            <span>R$ 289,86</span>
             <button
-              type="button"
-              onClick={() => this.handleAddProduct(product.id)}
-            >
-              <div>
+            type="button">
+              
+                    <div>
                 <MdAddShoppingCart size={16} color="#fff" />
-                {amount[product.id] || 0}
+                {0}
               </div>
               <span>ADICIONAR AO CARRINHO</span>
             </button>
+          
           </li>
-        ))}
       </ProductList>
     );
   }
@@ -64,3 +61,13 @@ const mapDispatchToProps = (dispatch) =>
   bindActionCreators(CartActions, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
+
+
+
+
+
+
+
+
+
+        
