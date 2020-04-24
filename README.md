@@ -1,18 +1,44 @@
-# Rocketshoes
+<h1 align="center">
+Rocketshoes (Netshoes clone)
 <h1 align="center" >
-  <img src="/readme-assets/screenshot.png" width="600"/>
+  <img src="/src/assets/images/screenshot.png" width="600"/>
+
 </h1>
+    
+## :rocket: Technologies
 
-E-commerce de tênis usando ReactJS e json-server.
+This project was developed at the [RocketSeat GoStack Bootcamp](https://rocketseat.com.br/bootcamp) with the following technologies:
 
-Para iniciar o "banco de dados" do projeto instale o json-server.
-https://github.com/typicode/json-server
+-  [ReactJS](https://reactjs.org/)
+-  [Redux](https://redux.js.org/)
+-  [Redux-Saga](https://redux-saga.js.org/)
+-  [React Navigation](https://reactnavigation.org/)
+-  [Axios](https://github.com/axios/axios)
+-  [Immer](https://github.com/immerjs/immer)
+-  [NumeralJS](http://numeraljs.com/)
+-  [styled-components](https://www.styled-components.com/)
+-  [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons)
+-  [react-native-shimmer-placeholder](https://github.com/tomzaku/react-native-shimmer-placeholder)
+-  [react-native-linear-gradient](https://github.com/react-native-community/react-native-linear-gradient)
+-  [Reactotron](https://infinite.red/reactotron)
 
-## Inciar o projeto
+## :information_source: How To Run
 
-Execute esse comando para instalatar todas as dependências.
-`yarn install`
+```bash
+# Clone this repository 
+$ git clone https://github.com/rodrigo7331/rocketshoes
 
-Depois, inicie o server: `json-server server.json -p 3333`
+# Go into the repository
+$ cd rocketshoes
 
-Agora inicie o aplicativo react: `yarn start`
+# Install dependencies 
+$ yarn install
+
+# Install and run json server 
+- https://github.com/typicode/json-server 
+$ json-server server.json -p 3333
+
+# Run the app 
+$ yarn start
+```
+
